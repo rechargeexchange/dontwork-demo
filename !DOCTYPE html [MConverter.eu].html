@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Don't Work - Company Reviews&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background: #5cb85c;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background: #4cae4c;
+        }
+        .comment-section {
+            margin-top: 30px;
+        }
+        .comment {
+            background: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Don't Work - Company Reviews&lt;/h1&gt;
+        &lt;form id=&quot;reviewForm&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;companyName&quot;&gt;Company Name&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;companyName&quot; name=&quot;companyName&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;personName&quot;&gt;Person Name&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;personName&quot; name=&quot;personName&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;mobileNo&quot;&gt;Mobile No.&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;mobileNo&quot; name=&quot;mobileNo&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;address&quot;&gt;Address&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;address&quot; name=&quot;address&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;gstOption&quot;&gt;GST&lt;/label&gt;
+                &lt;select id=&quot;gstOption&quot; name=&quot;gstOption&quot; required&gt;
+                    &lt;option value=&quot;withGST&quot;&gt;With GST&lt;/option&gt;
+                    &lt;option value=&quot;withoutGST&quot;&gt;Without GST&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;gstNo&quot;&gt;GST No.&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;gstNo&quot; name=&quot;gstNo&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;panNo&quot;&gt;PAN No.&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;panNo&quot; name=&quot;panNo&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;aadhar&quot;&gt;Aadhar&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;aadhar&quot; name=&quot;aadhar&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;websiteUrl&quot;&gt;Website URL&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;websiteUrl&quot; name=&quot;websiteUrl&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;fraudAmount&quot;&gt;Fraud Amount&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;fraudAmount&quot; name=&quot;fraudAmount&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;description&quot;&gt;Description&lt;/label&gt;
+                &lt;textarea id=&quot;description&quot; name=&quot;description&quot; required&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;label for=&quot;proof&quot;&gt;Proof&lt;/label&gt;
+                &lt;input type=&quot;file&quot; id=&quot;proof&quot; name=&quot;proof&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+                &lt;button type=&quot;submit&quot;&gt;Submit Review&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+        &lt;div class=&quot;comment-section&quot;&gt;
+            &lt;h2&gt;Comments&lt;/h2&gt;
+            &lt;div id=&quot;comments&quot;&gt;
+                &lt;!-- Comments will be added here --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const companyName = document.getElementById('companyName').value;
+            const personName = document.getElementById('personName').value;
+            const mobileNo = document.getElementById('mobileNo').value;
+            const address = document.getElementById('address').value;
+            const gstOption = document.getElementById('gstOption').value;
+            const gstNo = document.getElementById('gstNo').value;
+            const panNo = document.getElementById('panNo').value;
+            const aadhar = document.getElementById('aadhar').value;
+            const websiteUrl = document.getElementById('websiteUrl').value;
+            const fraudAmount = document.getElementById('fraudAmount').value;
+            const description = document.getElementById('description').value;
+
+            const comment = document.createElement('div');
+            comment.classList.add('comment');
+            comment.innerHTML = `&lt;strong&gt;${companyName}&lt;/strong&gt; by ${personName}&lt;br&gt;
+                                 Mobile No: ${mobileNo}&lt;br&gt;
+                                 Address: ${address}&lt;br&gt;
+                                 GST: ${gstOption}, GST No: ${gstNo}&lt;br&gt;
+                                 PAN No: ${panNo}&lt;br&gt;
+                                 Aadhar: ${aadhar}&lt;br&gt;
+                                 Website URL: ${websiteUrl}&lt;br&gt;
+                                 Fraud Amount: ${fraudAmount}&lt;br&gt;
+                                 Description: ${description}&lt;br&gt;`;
+            document.getElementById('comments').appendChild(comment);
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
